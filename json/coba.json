@@ -1,0 +1,32 @@
+[
+    {
+        "nama" : "Muzella" ,
+        "umur" : 21,
+        "nim"  : "2217020080",
+        "lulus": true,
+        "hobby":[
+            "nyanyi",
+            "beladiri"
+        ],
+        "pembimbing" : {
+            "pembimbing1": "ardian",
+            "pembimbing2": "nisa"
+        }
+
+    },
+    {
+        "nama" : "Muzella" ,
+        "umur" : 21,
+        "nim"  : "2217020080",
+        "lulus": true,
+        "hobby":[
+        "nyanyi",
+        "beladiri"
+        ],
+        "pembimbing" : {
+        "pembimbing1": "ardian",
+        "pembimbing2": "nisa"
+        }
+
+    }
+]
