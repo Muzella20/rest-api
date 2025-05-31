@@ -77,6 +77,10 @@ foreach ($result['data'] as $photo) {
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myproject">My Project</a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -241,6 +245,95 @@ foreach ($result['data'] as $photo) {
       </div>
     </section>
 
+    <!-- My Project -->
+<section class="myproject bg-light" id="myproject">
+  <div class="container">
+    <div class="row pt-4 mb-4">
+      <div class="col text-center">
+        <h2>My Project</h2>
+        <p class="text-muted">Kumpulan project sederhana saya menggunakan PHP, JSON, dan REST API.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Project: JSON -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top" src="img/project/1.png" width="50" alt="JSON Project">
+          <div class="card-body text-center">
+            <h5 class="card-title">JSON</h5>
+            <p class="card-text">Folder berisi file JSON untuk latihan REST API.</p>
+            <a href="http://localhost/rest-api/json" target="_blank" class="btn btn-primary">Lihat Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: WPU Hut -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top" src="img/project/2.png" width="50" alt="WPU Hut">
+          <div class="card-body text-center">
+            <h5 class="card-title">WPU Hut</h5>
+            <p class="card-text">Project sederhana untuk belajar REST API dasar.</p>
+            <a href="http://localhost/rest-api/wpu-hut" target="_blank" class="btn btn-primary">Lihat Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: WPU Movie -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top" src="img/project/3.jpg " width="50" alt="WPU Movie">
+          <div class="card-body text-center">
+            <h5 class="card-title">WPU Movie</h5>
+            <p class="card-text">Aplikasi film yang mengambil data dari API OMDb.</p>
+            <a href="http://localhost/rest-api/wpu-movie" target="_blank" class="btn btn-primary">Lihat Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: WPU Portfolio -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top" src="img/project/4.webp" width="50" alt="WPU Portfolio">
+          <div class="card-body text-center">
+            <h5 class="card-title">WPU Portfolio</h5>
+            <p class="card-text">Halaman portfolio online yang menampilkan semua project saya.</p>
+            <a href="http://localhost/rest-api/wpu-portfolio" target="_blank" class="btn btn-primary">Lihat Project</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Project: WPU Rest Server -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top" src="img/project/5.png" width="50" alt="WPU REST Server">
+          <div class="card-body text-center">
+            <h5 class="card-title">WPU REST Server</h5>
+            <p class="card-text">RESTful server untuk manajemen data mahasiswa.</p>
+            <a href="http://localhost/rest-api/wpu-rest-server" target="_blank" class="btn btn-primary">Lihat Project</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project: WPU Rest Client -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img class="card-img-top" src="img/project/6.jpeg" width="50" alt="WPU REST Client">
+          <div class="card-body text-center">
+            <h5 class="card-title">WPU REST Client</h5>
+            <p class="card-text">Menampilkan data mahasiswa dari REST API menggunakan Client PHP.</p>
+            <a href="http://localhost/rest-api/wpu-rest-client" target="_blank" class="btn btn-primary">Lihat Project</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Contact -->
     <section class="contact bg-light" id="contact">
@@ -308,12 +401,6 @@ foreach ($result['data'] as $photo) {
         </div>
       </div>
     </footer>
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
