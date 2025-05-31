@@ -10,6 +10,8 @@ function get_CURL($url)
 return json_decode($result, true);
 }
 
+// YT API
+
 $result = get_CURL( 'https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCdPfnImylUq8zH7dQZtlizw&key=AIzaSyD8kbqRe8JTLdAdaRsEJT974FnQPVM-QPo');
 
 $youtubeProfilePic = $result['items'][0]['snippet']['thumbnails']['medium']['url'];
@@ -20,6 +22,24 @@ $subscriber = $result['items'][0]['statistics']['subscriberCount'];
 $urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyD8kbqRe8JTLdAdaRsEJT974FnQPVM-QPo&channelId=UCdPfnImylUq8zH7dQZtlizw&maxResults=1&order=date&part=snippet';
 $result = get_CURL($urlLatestVideo);
 $LatestVideoId = $result['items'][0]['id']['videoId'];
+
+// Instagram API
+$clientId = '17841406729669895';
+$accessToken = 'IGAAYCOdgS7kZABZAE9yQ2RfZA25heEt0TVlfVWFDckRxeVdoZAmdvc19jY2NHVkJnbEhNQkhCUm9PdlVOWHBtbDhmQWF6VFFwZA001WVdUd2szTG9DcVNNanhwRjRQQmlPZAFpIV2ZA4ckFVS0E2Q3NqVmVrMldRV1p2ODVMWUQ4XzBSbwZDZD';
+
+$result = get_CURL('https://graph.instagram.com/17841406729669895/?fields=username,profile_picture_url,followers_count&access_token=IGAAYCOdgS7kZABZAE9yQ2RfZA25heEt0TVlfVWFDckRxeVdoZAmdvc19jY2NHVkJnbEhNQkhCUm9PdlVOWHBtbDhmQWF6VFFwZA001WVdUd2szTG9DcVNNanhwRjRQQmlPZAFpIV2ZA4ckFVS0E2Q3NqVmVrMldRV1p2ODVMWUQ4XzBSbwZDZD');
+$usernameIG = $result['username'];
+$profilePictureIG = $result['profile_picture_url'];
+$followersIG = $result['followers_count'];
+
+// latest IG Post
+$result = get_CURL('https://graph.instagram.com/17841406729669895/media?fields=id,caption,media_type,media_url,timestamp&access_token=IGAAYCOdgS7kZABZAE9yQ2RfZA25heEt0TVlfVWFDckRxeVdoZAmdvc19jY2NHVkJnbEhNQkhCUm9PdlVOWHBtbDhmQWF6VFFwZA001WVdUd2szTG9DcVNNanhwRjRQQmlPZAFpIV2ZA4ckFVS0E2Q3NqVmVrMldRV1p2ODVMWUQ4XzBSbwZDZD');
+
+$photos = [];
+foreach ($result['data'] as $photo) {
+  $photos[] = $photo['media_url'];
+}
+
 
 ?>
 <!doctype html>
@@ -66,7 +86,7 @@ $LatestVideoId = $result['items'][0]['id']['videoId'];
     <div class="jumbotron" id="home">
       <div class="container">
         <div class="text-center">
-          <img src="img/profile2.png" class="rounded-circle img-thumbnail">
+          <img src="img/profile3.jpg" width="200" class="rounded-circle img-thumbnail">
           <h1 class="display-4">Muzella Sabilla Risma</h1>
           <h3 class="lead">Student | Programmer | Youtuber</h3>
         </div>
@@ -126,34 +146,29 @@ $LatestVideoId = $result['items'][0]['id']['videoId'];
       </div>
 
       <!-- Kolom 2: Instagram -->
-      <div class="col-md-5">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="img/profile1.png" width="200" class="rounded-circle img-thumbnail">
-          </div>
-          <div class="col-md-8">
-            <h5>@sandhikagalih</h5>
-            <p>7000 Followers.</p>
-          </div>
-        </div>
+       <div class="col-md-5">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="<?= $profilePictureIG; ?>" width="200" class="rounded-circle img-thumbnail">
+              </div>
+              <div class="col-md-8">
+                <h5><?= $usernameIG; ?></h5>
+                <p><?= $followersIG; ?> Followers.</p>
+              </div>
+            </div>
 
-        <div class="row mt-3 pb-3">
-          <div class="col d-flex">
-            <div class="ig-thumbnail">
-              <img src="img/thumbs/1.png">
-            </div>
-            <div class="ig-thumbnail">
-              <img src="img/thumbs/2.png">
-            </div>
-            <div class="ig-thumbnail">
-              <img src="img/thumbs/3.png">
+            <div class="row mt-3 pb-3">
+              <div class="col">
+                <?php foreach ($photos as $photo) : ?>
+                <div class="ig-thumbnail">
+                  <img src="<?= $photo; ?>">
+                </div>
+                <?php endforeach; ?>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </div>
 </section>
 
 

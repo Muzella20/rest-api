@@ -18,6 +18,8 @@ footer {
 .ig-thumbnail {
     width: 100px !important;
     height: 100px !important;
+    float: left !important;
+    overflow: hidden !important;
 }
 
 .ig-thumbnail img {
