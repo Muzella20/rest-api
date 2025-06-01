@@ -108,10 +108,10 @@ foreach ($result['data'] as $photo) {
         </div>
         <div class="row justify-content-center">
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <p>Saya adalah mahasiswa yang memiliki ketertarikan besar dalam bidang analisis data. Bagi saya, data bukan hanya sekumpulan angka, tetapi sumber informasi berharga yang bisa diolah menjadi wawasan strategis. Dalam proses belajar, saya terbiasa menggunakan berbagai tools untuk mengolah dan memvisualisasikan data agar lebih mudah dipahami dan bermanfaat dalam pengambilan keputusan.</p>
           </div>
           <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <p>Melalui beberapa proyek pribadi dan akademik, saya telah mengembangkan kemampuan dalam menganalisis tren, menyusun laporan berbasis data, serta menyampaikan hasil analisis dengan visualisasi yang informatif. Saya percaya bahwa kemampuan membaca data secara kritis akan menjadi salah satu keahlian penting dalam menghadapi tantangan dunia digital yang terus berkembang.</p>
           </div>
         </div>
       </div>
