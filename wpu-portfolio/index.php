@@ -118,7 +118,7 @@ foreach ($result['data'] as $photo) {
     </section>
 
 
- <!-- Youtube & IG -->  
+ <!-- Social Media -->  
 <section class="social bg-light" id="social">
   <div class="container">
     <div class="row pt-4 mb-4">
@@ -336,7 +336,7 @@ foreach ($result['data'] as $photo) {
 
 
     <!-- Contact -->
-    <section class="contact bg-light" id="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
