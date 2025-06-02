@@ -8,12 +8,14 @@ $client = new Client();
 $response = $client->request('GET', 'http://omdbapi.com', [
     'query' => [
         'apikey' => '7ae1592',
-        's' => 'transformers'
+        's' => 'doraemon'
     ]
 ]);
 
-$result = json_decode($response->getBody()->getContents(), true);
-
+$body = $response->getBody()->getContents();
+$result = json_decode($body, true);
+// pengecekan
+$movies = isset($result['Search']) ? $result['Search'] : [];
 ?>
 <!DOCTYPE html>
 <html lang="en">
