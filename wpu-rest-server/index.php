@@ -55,7 +55,8 @@
  */
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 	// Suppress deprecated warnings for PHP 8.2+
-	error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
+	error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
+
 
 
 /*
@@ -69,7 +70,7 @@
 switch (ENVIRONMENT)
 {
     case 'development':
-    error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
+    error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
     ini_set('display_errors', 1);
 	break;
 
