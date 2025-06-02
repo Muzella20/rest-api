@@ -355,9 +355,9 @@ foreach ($result['data'] as $photo) {
             
             <ul class="list-group mb-4">
               <li class="list-group-item"><h3>Location</h3></li>
-              <li class="list-group-item">My Office</li>
-              <li class="list-group-item">Jl. Setiabudhi No. 193, Bandung</li>
-              <li class="list-group-item">West Java, Indonesia</li>
+              <li class="list-group-item">My Home</li>
+              <li class="list-group-item">Jl. Adinegoro no.100 ,Padang</li>
+              <li class="list-group-item">West Sumatra, Indonesia</li>
             </ul>
           </div>
 
@@ -396,7 +396,7 @@ foreach ($result['data'] as $photo) {
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <p>Copyright &copy; 2018.</p>
+            <p>@muzellasabillarisma@gmail.com</p>
           </div>
         </div>
       </div>
