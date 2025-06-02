@@ -1,6 +1,6 @@
 [
     {
-        "nama" : "Muzella" ,
+        "nama" : "Muzella Sabilla Risma" ,
         "umur" : 21,
         "nim"  : "2217020080",
         "lulus": true,
@@ -11,11 +11,15 @@
         "pembimbing" : {
             "pembimbing1": "ardian",
             "pembimbing2": "nisa"
+        },
+        "penguji" : {
+            "penguji1" : "Marisa",
+            "penguji2" : "Yahya"
         }
 
     },
     {
-        "nama" : "Muzella" ,
+        "nama" : "Muzella Sabilla Risma" ,
         "umur" : 21,
         "nim"  : "2217020080",
         "lulus": true,
@@ -26,6 +30,10 @@
         "pembimbing" : {
         "pembimbing1": "ardian",
         "pembimbing2": "nisa"
+        },
+        "penguji" : {
+            "penguji1" : "Marisa",
+            "penguji2" : "Yahya"
         }
 
     }
