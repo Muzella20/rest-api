@@ -92,7 +92,7 @@ foreach ($result['data'] as $photo) {
         <div class="text-center">
           <img src="img/profile33.jpg" width="200" class="rounded-circle img-thumbnail">
           <h1 class="display-4">Muzella Sabilla Risma</h1>
-          <h3 class="lead">Student | Programmer | Youtuber</h3>
+          <h3 class="lead">Student | Data Analyst | Youtuber</h3>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@ foreach ($result['data'] as $photo) {
       <div class="container">
         <div class="row mb-4">
           <div class="col text-center">
-            <h2>About</h2>
+            <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -123,7 +123,7 @@ foreach ($result['data'] as $photo) {
   <div class="container">
     <div class="row pt-4 mb-4">
       <div class="col text-center">
-        <h2>Social Media</h2>
+        <h2>My Social Media</h2>
       </div>
     </div>
 
@@ -182,7 +182,7 @@ foreach ($result['data'] as $photo) {
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
-            <h2>Portfolio</h2>
+            <h2>My Portfolio</h2>
           </div>
         </div>
         <div class="row">
