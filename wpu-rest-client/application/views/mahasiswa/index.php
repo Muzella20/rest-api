@@ -14,14 +14,14 @@
     <?php endif; ?>
 
     <div class="row mt-3">
-        <div class="col-md-6">
+        <div class="col-md-8 mx-auto">
             <a href="<?= base_url(); ?>mahasiswa/tambah" class="btn btn-primary">Tambah
                 Data Mahasiswa</a>
         </div>
     </div>
 
     <div class="row mt-3">
-        <div class="col-md-6">
+        <div class="col-md-8 mx-auto">
             <form action="" method="post">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Cari data mahasiswa.." name="keyword">
@@ -34,7 +34,7 @@
     </div>
 
     <div class="row mt-3">
-        <div class="col-md-6">
+        <div class="col-md-8 mx-auto">
             <h3>Daftar Mahasiswa</h3>
             <?php if (empty($mahasiswa)) : ?>
                 <div class="alert alert-danger" role="alert">
