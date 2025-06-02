@@ -1,8 +1,7 @@
 <?php
 $data = file_get_contents('<data/pizza.json');
-$menu = json_decode($data, true);
+$menu = json_decode($data, true)["menu"];
 
-$menu = $menu["menu"];
 ?>
 <!doctype html>
 <html lang="en">
